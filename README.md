@@ -60,8 +60,9 @@ To run this project locally, follow these steps:
    BASE_DIR = os.path.abspath(os.path.dirname(__file__))
    DATABASE_PATH = os.path.join(BASE_DIR, 'url_shortener.db')
 
-   SQLALCHEMY_DATABASE_URI = f'sqlite:///{DATABASE_PATH}'
-   SQLALCHEMY_TRACK_MODIFICATIONS = False
+   class Config:
+       SQLALCHEMY_DATABASE_URI = f'sqlite:///{DATABASE_PATH}'
+       SQLALCHEMY_TRACK_MODIFICATIONS = False
    ```
 
 5. Initialize the database:
