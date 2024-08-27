@@ -32,26 +32,26 @@ URL-Shortener/
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/Aryan-Gupta2003/URL_Shortener.git
    ```
 
-2. Create a virtual environment:
+2. **Create a virtual environment**:
 
    ```bash
    python -m venv venv
    venv\Scripts\activate
    ```
 
-3. Install dependencies:
+3. **Install dependencies**:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Configure the database:
+4. **Configure the database**:
    Edit the config.py file to set the path for the SQLite database:
 
    ```python
@@ -65,14 +65,14 @@ To run this project locally, follow these steps:
        SQLALCHEMY_TRACK_MODIFICATIONS = False
    ```
 
-5. Initialize the database:
+5. **Initialize the database**:
    Run the test.py script to create the necessary database tables:
 
    ```bash
    python test.py
    ```
 
-6. Run the application:
+6. **Run the application**:
    Start the Flask development server:
    ```bash
    python app.py
